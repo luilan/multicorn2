@@ -75,7 +75,7 @@ else
 	endif
 
 
-	python_version = $(shell ${PYTHON} --version 2>&1 | cut -d ' ' -f 2 | cut -d '.' -f 1-2)
+	python_version = $(shell ${PYTHON} --version 2>&1 | cut -d ' ' -f 2 | cut -d '.' -f 1)
 	PYTHON_CONFIG ?= python${python_version}-config
 
 	# --embed required for Py >= 3.8
